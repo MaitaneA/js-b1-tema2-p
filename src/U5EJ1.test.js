@@ -13,7 +13,7 @@ describe("tests", () => {
 	const starName = tests()[9];
 	const PWR = tests()[10];
 	const venusToSarturn = tests()[11];
-	test('comproves that myPlanet1, myPlanet2, ..., myPlanet8 are objects', () => {
+	test('verifies that myPlanet1, myPlanet2, ..., myPlanet8 are objects', () => {
 		expect(typeof(myPlanet1)=='object' && !Array.isArray(myPlanet1)).toBe(true);
 		expect(typeof(myPlanet2)=='object' && !Array.isArray(myPlanet2)).toBe(true);
 		expect(typeof(myPlanet3)=='object' && !Array.isArray(myPlanet3)).toBe(true);
@@ -23,13 +23,13 @@ describe("tests", () => {
 		expect(typeof(myPlanet7)=='object' && !Array.isArray(myPlanet7)).toBe(true);
 		expect(typeof(myPlanet8)=='object' && !Array.isArray(myPlanet8)).toBe(true);
 	});
-	test('comproves properties in myPlanet1', () => {
+	test('verifies properties in myPlanet1', () => {
 		expect(myPlanet1.name).toBe("Mercury");
 		expect(myPlanet1.distanceToSun).toBe(58344000);
 		expect(myPlanet1.hasRings).toBe(false);
 		expect(myPlanet1.diameter).toBe(4878);
 	});
-	test('comproves properties in myPlanet8', () => {
+	test('verifies properties in myPlanet8', () => {
 		expect(myPlanet8.name).toBe("Neptune");
 		expect(myPlanet8.distanceToSun).toBe(4300000000);
 		expect(myPlanet8.hasRings).toBe(true);

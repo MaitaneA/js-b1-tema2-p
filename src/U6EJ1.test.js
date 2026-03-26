@@ -11,10 +11,10 @@ describe("tests", () => {
 	} catch {
 		isValidJson = false;
 	} 
-	test('comproves that Planet is defined as class', () => {
+	test('verifies that Planet is defined as class', () => {
 		expect(typeof(Planet)=='function').toBe(true);
 	});
-	test('comproves that planetsAsJson contains almost 3 Planets', () => {
+	test('verifies that planetsAsJson contains almost 3 Planets', () => {
 		expect(isValidJson).toBe(true);
 		expect(Array.isArray(arrayTest)).toBe(true);
 		expect(arrayTest.length>=3).toBe(true);

@@ -26,10 +26,25 @@
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+class Triangle{
+  constructor(base, height) {
+    this.base = base;
+    this.height = height;
+  }
+}
 
+const myTriangle1 = new Triangle(10, 5);
+const myTriangle2 = new Triangle(15, 7);
 
+myTriangle2.base = myTriangle1.height;
+myTriangle1.height = myTriangle2.height;
 
+function areaTriangle(triangle) {
+  return (triangle.base * triangle.height)/2;
+}
 
+const areaMyTriangle1 = areaTriangle(myTriangle1);
+const areaMyTriangle2 = areaTriangle(myTriangle2);
 
 /**
  * TEST

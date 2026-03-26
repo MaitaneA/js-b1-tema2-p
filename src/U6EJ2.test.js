@@ -12,10 +12,10 @@ describe("tests", () => {
 		isValidJson = false;
 	} 
 	const myJSON= '[{"brand":"Ford","model":"Mustang Boss 429","displacement":7000,"horsePower":375,"year":1969},{"brand":"BMW","model":"520d","displacement":1980,"horsePower":136,"year":2002},{"brand":"Mercedes-Benz","model":"280 SLC","displacement":2746,"horsePower":136,"year":1979}]';
-	test('comproves that constant myCars is correctly defined', () => {
+	test('verifies that constant myCars is correctly defined', () => {
 		expect(JSON.stringify(myCars)==myJSON).toBe(true);
 	});
-	test('comproves that constant lessThan25 is correctly defined', () => {
+	test('verifies that constant lessThan25 is correctly defined', () => {
 		expect(Array.isArray(lessThan25)).toBe(true);
 		expect(lessThan25.length).toBe(1);
 		expect(typeof(lessThan25[0])=='object' && !Array.isArray(lessThan25[0])).toBe(true);
