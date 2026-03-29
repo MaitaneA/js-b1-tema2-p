@@ -39,9 +39,35 @@
 */
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+class Triangle{
+  constructor(base, height, rightTriangle) {
+    this.base = base;
+    this.height = height;
+    this.rightTriangle = rightTriangle;
+  };
 
+  get areaTriangle() {
+    return (this.base * this.height) / 2;
+  };
 
+  get rightHypotenuse() {
+    if (!this.rightTriangle) return undefined;
 
+    function hypotenuse(a,b) {
+      function square(x) {
+        return x*x;
+      }
+
+      return Math.sqrt(square(a) + square(b));
+    }
+
+    return hypotenuse(this.base, this.height);
+  };
+
+  get rightPerimeter() {
+    return this.rightTriangle ? this.rightHypotenuse + this.base + this.height : undefined;
+  };
+};
 
 /**
  * TEST
