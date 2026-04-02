@@ -50,7 +50,77 @@ class Planet {
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+let planetsArray = [
+	{
+		name: "Mercury",
+		distanceToSun: 58344000,
+		hasRings: false,
+		diameter: 4878
+	},
+	{
+		name: "Venus",
+		distanceToSun: 107712000,
+		hasRings: false,
+		diameter: 12100
+	},
+	{
+		name: "Earth",
+		distanceToSun: 149600000,
+		hasRings: false,
+		diameter: 12756
+	},
+	{
+		name: "Mars",
+		distanceToSun: 227392000,
+		hasRings: false,
+		diameter: 6787
+	},
+	{
+		name: "Jupiter",
+		distanceToSun: 777920000,
+		hasRings: true,
+		diameter: 142984
+	},
+	{
+		name: "Saturn",
+		distanceToSun: 1427184000,
+		hasRings: true,
+		diameter: 120536
+	},
+	{
+		name: "Uranus",
+		distanceToSun: 2600000000,
+		hasRings: true,
+		diameter: 51108
+	},
+	{
+		name: "Neptune",
+		distanceToSun: 4300000000,
+		hasRings: true,
+		diameter: 49538
+	}
+];
 
+// 1
+const myPlanet1 = new Planet(planetsArray[0].name, planetsArray[0].distanceToSun, planetsArray[0].hasRings, planetsArray[0].diameter);
+const myPlanet2 = new Planet(planetsArray[1].name, planetsArray[1].distanceToSun, planetsArray[1].hasRings, planetsArray[1].diameter);
+const myPlanet3 = new Planet(planetsArray[2].name, planetsArray[2].distanceToSun, planetsArray[2].hasRings, planetsArray[2].diameter);
+const myPlanet4 = new Planet(planetsArray[3].name, planetsArray[3].distanceToSun, planetsArray[3].hasRings, planetsArray[3].diameter);
+const myPlanet5 = new Planet(planetsArray[4].name, planetsArray[4].distanceToSun, planetsArray[4].hasRings, planetsArray[4].diameter);
+const myPlanet6 = new Planet(planetsArray[5].name, planetsArray[5].distanceToSun, planetsArray[5].hasRings, planetsArray[5].diameter);
+const myPlanet7 = new Planet(planetsArray[6].name, planetsArray[6].distanceToSun, planetsArray[6].hasRings, planetsArray[6].diameter);
+const myPlanet8 = new Planet(planetsArray[7].name, planetsArray[7].distanceToSun, planetsArray[7].hasRings, planetsArray[7].diameter);
+
+// 2
+const starName = myPlanet1.nameOftheStar();
+console.log(starName);
+
+// 3
+const PWR = Planet.planetsWithRings([myPlanet1, myPlanet2, myPlanet3, myPlanet4, myPlanet5, myPlanet6, myPlanet7, myPlanet8]);
+
+// 4
+const venusToSarturn = Planet.distanceBetweenPlanets(myPlanet2, myPlanet6);
+console.log(venusToSarturn);
 
 /**
  * TEST

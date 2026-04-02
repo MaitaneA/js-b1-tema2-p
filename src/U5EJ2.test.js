@@ -8,9 +8,9 @@ describe("tests", () => {
   test('checks if Cars is a class',() => {
     expect(typeof(Car)).toBe("function");
   });
-  test('checks if the Car\'s class has method compareAntiguaty',() => {
-    expect(Car.toString().indexOf("compareAntiguaty")).toBeGreaterThan(0);
-    expect(Car.compareAntiguaty(myCar1,myCar3)).toBe(myCar1);
+  test('checks if the Car\'s class has method compareAntiquity',() => {
+    expect(Car.toString().indexOf("compareAntiquity")).toBeGreaterThan(0);
+    expect(Car.compareAntiquity(myCar1,myCar3)).toBe(myCar1);
   });
   test('checks if the Car\'s class has method maxDisplacement',() => {
     expect(Car.toString().indexOf("maxDisplacement")).toBeGreaterThan(0);
