@@ -25,8 +25,13 @@ const myJSON= '[{"brand":"Ford","model":"Mustang Boss 429","displacement":7000,"
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function newerThan25(car) {
+  return (2025 - car.year < 25) ? true : false;
+}
 
-
+const myCars = JSON.parse(myJSON);
+const lessThan25 = myCars.filter(newerThan25);
+const newCarsJSON = JSON.stringify(lessThan25);
 
 /**
  * TEST

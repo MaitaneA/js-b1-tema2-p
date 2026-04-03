@@ -38,9 +38,18 @@ class Planet {
 }
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+const myPlanet1 = new Planet("Mercury", 58344000, false, 4878);
+const myPlanet2 = new Planet("Venus", 107712000, false, 12100);
+const myPlanet3 = new Planet("Earth", 149600000, false, 12756);
 
+const myPlanets = [myPlanet1, myPlanet2, myPlanet3];
 
+const myJSON = JSON.stringify(myPlanets);
+const myPlanetsFromJSON = JSON.parse(myJSON);
 
+const planetsBTE = Planet.biggerThanEarth(myPlanetsFromJSON);
+
+console.log(JSON.stringify(planetsBTE));
 
 /**
  * TEST

@@ -23,9 +23,16 @@ const myJSON = '[{"base":10,"height":5,"rightTriangle":true},{"base":10,"height"
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function isEquilateral(triangle) {
+	if (triangle.height === (triangle.base * Math.sqrt(3)) / 2) return true;
+	else return false;
+};
 
+const myTriangles = JSON.parse(myJSON);
+const equilateralsTriangles = myTriangles.filter(isEquilateral);
+const newTrianglesJSON = JSON.stringify(equilateralsTriangles);
 
-
+console.log(newTrianglesJSON);
 
 /**
  * TEST
